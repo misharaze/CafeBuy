@@ -1,0 +1,158 @@
+.contact-page {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  text-align: center;
+  color: #f5eee5;
+
+  h2 {
+    color: #c69c6d;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 2.2rem;
+  background: #2a2522;
+  border-radius: 16px;
+  box-shadow:
+    inset 4px 4px 10px rgba(0,0,0,0.45),
+    inset -4px -4px 10px rgba(70,60,50,0.35);
+}
+
+.input-wrapper {
+  position: relative;
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    background: #1f1b18;
+    border-radius: 14px;
+    border: 1px solid #3d362f;
+    color: #e5dfd5;
+    font-size: 1rem;
+    transition: .3s;
+
+    &:focus {
+      outline: none;
+      border-color: #c69c6d;
+      box-shadow: 0 0 10px rgba(198,156,109, .3);
+    }
+
+    &:not(:placeholder-shown) + label,
+    &:focus + label {
+      top: -10px;
+      left: 14px;
+      font-size: .75rem;
+      color: #c69c6d;
+    }
+  }
+
+  label {
+    position: absolute;
+    pointer-events: none;
+    left: 22px;
+    top: 16px;
+    color: #a89e92;
+    transition: .25s;
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: none;
+  }
+
+  .error {
+    color: #ef8b8b;
+    font-size: .8rem;
+    margin-top: .3rem;
+    display: block;
+  }
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #c69c6d;
+  color: #1f1b18;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover:not(:disabled) {
+    background: #d7b899;
+  }
+
+  &:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+  }
+}
+
+.success {
+  color: #c69c6d;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+
+/* -------- TABLET -------- */
+@media (max-width: 768px) {
+  .contact-page {
+    padding: 3rem 1rem;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+
+  .contact-form {
+    padding: 2rem;
+  }
+}
+
+/* -------- MOBILE -------- */
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 2.5rem 0.8rem;
+
+    h2 {
+      font-size: 1.6rem;
+    }
+  }
+
+  .contact-form {
+    padding: 1.6rem;
+    gap: 1.3rem;
+  }
+
+  button {
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* -------- SMALL MOBILE -------- */
+@media (max-width: 360px) {
+  .contact-form {
+    padding: 1.25rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}

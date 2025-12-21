@@ -1,0 +1,10 @@
+.magic-button {
+  background: linear-gradient(#c69c6d, #b28a55);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 4px 12px rgba(198,156,109,0.35);
+  font-family: "Poppins", sans-serif;
+
+  &:hover {
+    box-shadow: 0 0 26px rgba(198,156,109,0.55);
+  }
+}

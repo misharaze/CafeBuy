@@ -1,0 +1,108 @@
+.cta-banner {
+  background-color: #1f1b18;
+  color: #f5f0e6;
+  padding: 4rem 1rem;
+  text-align: center;
+
+  .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #c69c6d;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.8rem;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      background: #c69c6d;
+      color: #1f1b18;
+      padding: 0.9rem 2rem;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      display: inline-block;
+
+      &:hover {
+        background: #d7b899;
+      }
+    }
+  }
+
+
+  /* --- TABLETS --- */
+  @media (max-width: 1024px) {
+    .cta-content {
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  /* --- MID MOBILE --- */
+  @media (max-width: 768px) {
+    padding: 3rem 1rem;
+
+    .cta-content {
+      max-width: 90%;
+      h2 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 1.05rem;
+      }
+
+      .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+      }
+    }
+  }
+
+  /* --- SMALL MOBILE --- */
+  @media (max-width: 480px) {
+    padding: 2.5rem 1rem;
+
+    .cta-content {
+      h2 {
+        font-size: 1.6rem;
+      }
+      p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+
+      .cta-button {
+        padding: 0.65rem 1.2rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+
+  /* --- EXTRA SMALL (IPHONE SE) --- */
+  @media (max-width: 360px) {
+    .cta-content {
+      h2 {
+        font-size: 1.45rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .cta-button {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}

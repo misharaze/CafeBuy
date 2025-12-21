@@ -1,0 +1,108 @@
+.footer {
+  background: #1f1b18;
+  color: #f5f0e6;
+  padding: 3rem 1.5rem;
+  font-size: 1rem;
+  border-top: 1px solid rgba(198,156,109,0.2);
+
+  .container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+
+  /* BRAND SECTION */
+  .branding {
+    flex: 1 1 250px;
+    
+    h3 {
+      color: #c69c6d;
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+    }
+
+    p {
+      margin: 0.3rem 0;
+      color: #d8d1c7;
+      line-height: 1.5;
+    }
+  }
+
+  /* CONTACTS */
+  .contact {
+    flex: 1 1 250px;
+
+    p {
+      margin: 0.3rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #e5e0d6;
+      line-height: 1.5;
+    }
+  }
+
+  /* SOCIAL LINKS */
+  .social {
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 1.2rem;
+
+    a {
+      color: #c69c6d;
+      font-size: 1.4rem;
+      transition: 0.3s ease;
+
+      &:hover {
+        opacity: 0.65;
+        transform: translateY(-2px);
+      }
+    }
+  }
+
+  /* TABLET */
+  @media (max-width: 900px) {
+    .container {
+      gap: 2rem;
+    }
+  }
+
+  /* MOBILE */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.8rem;
+    }
+
+    .social {
+      justify-content: center;
+    }
+  }
+
+  /* SMALL MOBILE */
+  @media (max-width: 450px) {
+    padding: 2.5rem 1rem;
+    font-size: 0.92rem;
+
+    .branding h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+  /* TINY DEVICES 360px */
+  @media (max-width: 360px) {
+    font-size: 0.85rem;
+
+    .social a {
+      font-size: 1.2rem;
+    }
+  }
+}

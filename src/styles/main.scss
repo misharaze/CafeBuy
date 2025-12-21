@@ -1,0 +1,50 @@
+// main.scss
+
+$bg-color: #2e2a26;
+$text-color: #f5f0e6;
+$accent-color: #c69c6d;
+$link-hover: #d7b899;
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: $bg-color;
+  color: $text-color;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-hover;
+  }
+}
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.page {
+  padding: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+// Адаптация
+@media (max-width: 768px) {
+  .main {
+    padding: 1rem 0.5rem;
+  }
+
+  .page {
+    padding: 1.5rem 1rem;
+  }
+}

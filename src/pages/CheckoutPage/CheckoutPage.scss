@@ -1,0 +1,126 @@
+.checkout-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  color: #f5eee6;
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #c69c6d;
+    margin-bottom: 1.5rem;
+  }
+
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    gap: 1.2rem;
+    background: #2a2522;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow:
+      inset 4px 4px 10px rgba(0, 0, 0, 0.4),
+      inset -4px -4px 10px rgba(70,60,50,0.3);
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      color: #f5f0e6;
+
+      input,
+      textarea {
+        margin-top: 0.4rem;
+        padding: 0.7rem;
+        border-radius: 10px;
+        border: none;
+        background: #f5f0e6;
+        color: #1f1b18;
+        font-size: 1rem;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+    }
+
+    button {
+      background: #c69c6d;
+      color: #1f1b18;
+      border: none;
+      padding: 0.9rem;
+      font-size: 1.05rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s ease;
+
+      &:hover {
+        background: #d7b899;
+      }
+    }
+  }
+
+  .success {
+    margin-top: 2rem;
+    text-align: center;
+    color: #c69c6d;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .checkout-page h2 {
+    font-size: 1.8rem;
+  }
+
+  .checkout-form {
+    padding: 1.8rem;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .checkout-page {
+    padding: 2.5rem 0.8rem;
+  }
+
+  .checkout-form {
+    padding: 1.5rem;
+  }
+
+  .checkout-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 360px) {
+  .checkout-form {
+    padding: 1.2rem;
+  }
+
+  .checkout-form input,
+  .checkout-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .checkout-form button {
+    font-size: 0.95rem;
+  }
+}
+
+/* validation errors */
+.checkout-form .error {
+  color: #ff9e80;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+}

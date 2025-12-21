@@ -1,0 +1,127 @@
+.reviews-section {
+  padding: 5rem 1rem;
+  background: #1f1b18;
+}
+
+.reviews-header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 3rem auto;
+
+  h2 {
+    color: #c69c6d;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+  }
+
+  p {
+    color: #ded4c8;
+    line-height: 1.6;
+    font-size: 1.05rem;
+  }
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+}
+
+.review-card {
+  background: #2a2522;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow:
+    inset 3px 3px 8px rgba(0, 0, 0, 0.5),
+    inset -3px -3px 8px rgba(70, 60, 50, 0.35);
+
+  .text {
+    color: #f5f0e6;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .name {
+    font-weight: 600;
+    color: #c69c6d;
+    font-size: 1.05rem;
+  }
+
+  .role {
+    font-size: 0.85rem;
+    color: #b5aa9e;
+  }
+}
+
+
+/* ----------- ADAPTIVE BREAKPOINTS ----------- */
+
+/* Laptop */
+@media (max-width: 1024px) {
+  .reviews-section {
+    padding: 4rem 1rem;
+  }
+
+  .reviews-header h2 {
+    font-size: 1.9rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .reviews-header p {
+    font-size: 1rem;
+  }
+
+  .review-card {
+    padding: 1.3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .reviews-section {
+    padding: 3.2rem 0.8rem;
+  }
+
+  .reviews-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .reviews-header p {
+    font-size: 0.95rem;
+  }
+
+  .review-card {
+    padding: 1.1rem;
+    border-radius: 12px;
+  }
+
+  .review-card .text {
+    font-size: 0.9rem;
+  }
+
+  .review-card .name {
+    font-size: 0.95rem;
+  }
+
+  .review-card .role {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 360px) {
+  .reviews-header h2 {
+    font-size: 1.45rem;
+  }
+  
+  .review-card {
+    padding: 1rem;
+  }
+
+  .review-card .text {
+    font-size: 0.87rem;
+  }
+}

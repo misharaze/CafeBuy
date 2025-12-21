@@ -1,0 +1,119 @@
+.why-choose-us {
+    background: #1f1b18; 
+    color: #f5f0e6;
+    padding: 4rem 1rem;
+  
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 3rem;
+    }
+  
+    .left {
+      flex: 1;
+      min-width: 280px;
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+      }
+  
+      button {
+        padding: 0.6rem 1.2rem;
+        border: none;
+        background: #c69c6d;
+        color: #fff;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  
+    .right {
+      flex: 2;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+  
+      .feature {
+        background: #2a2522;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+        .icon {
+          font-size: 1.5rem;
+          color: #c69c6d;
+          margin-bottom: 0.5rem;
+        }
+  
+        h3 {
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+        }
+  
+        p {
+          font-size: 0.95rem;
+          color: #444;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .why-choose-us .left h2 {
+      font-size: 1.8rem;
+    }
+  
+    .why-choose-us .right {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .why-choose-us .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .why-choose-us .left button {
+      width: 100%;
+      max-width: 260px;
+      margin: 0 auto;
+    }
+  
+    .why-choose-us .right {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .why-choose-us {
+      padding: 2.5rem 1rem;
+    }
+  
+    .why-choose-us .left h2 {
+      font-size: 1.6rem;
+    }
+  
+    .why-choose-us .right .feature {
+      padding: 1.2rem;
+    }
+  
+    .why-choose-us .right .feature h3 {
+      font-size: 1rem;
+    }
+  }
+  

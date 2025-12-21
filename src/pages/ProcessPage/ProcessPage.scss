@@ -1,0 +1,116 @@
+.process-page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    color: #f5eee6;
+    text-align: center;
+  
+    header {
+      margin-bottom: 3rem;
+  
+      h1 {
+        font-size: 2.5rem;
+        color: #c69c6d;
+        margin-bottom: 1rem;
+      }
+  
+      p {
+        max-width: 600px;
+        margin: 0 auto;
+        color: #d3c9be;
+      }
+    }
+  
+    .steps {
+      display: grid;
+      gap: 2rem;
+  
+      .step {
+        background: #2a2522;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow:
+          inset 3px 3px 8px rgba(0, 0, 0, 0.5),
+          inset -3px -3px 8px rgba(70,60,50,0.35);
+  
+        h2 {
+          color: #c69c6d;
+          margin-bottom: .6rem;
+        }
+  
+        p {
+          color: #ded4c9;
+          line-height: 1.6;
+        }
+      }
+    }
+  
+    footer {
+      margin-top: 3rem;
+      color: #c69c6d;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .process-page {
+      header h1 {
+        font-size: 2rem;
+      }
+      .steps {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  /* 1024px — планшеты */
+@media (max-width: 1024px) {
+  .process-page header h1 {
+    font-size: 2.2rem;
+  }
+
+  .process-page .steps .step {
+    padding: 1.6rem;
+  }
+}
+
+/* 768px — уже есть, но усилим */
+@media (max-width: 768px) {
+  .process-page {
+    padding: 2.5rem 1rem;
+  }
+
+  .process-page header h1 {
+    font-size: 2rem;
+  }
+
+  .process-page header p {
+    font-size: 0.95rem;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 480px — маленькие смартфоны */
+@media (max-width: 480px) {
+  .process-page header h1 {
+    font-size: 1.7rem;
+  }
+
+  .process-page header p {
+    font-size: 0.9rem;
+    max-width: 95%;
+  }
+
+  .process-page .steps .step h2 {
+    font-size: 1.2rem;
+  }
+
+  .process-page .steps .step {
+    padding: 1.4rem;
+  }
+
+  .process-page footer {
+    font-size: 0.9rem;
+  }
+}
