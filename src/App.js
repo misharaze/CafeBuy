@@ -32,7 +32,6 @@ function App() {
             <Route path="/coffee-varieties" element={<VarietiesPage />} />
             <Route path="/advantages" element={<AdvantagesPage />} />
       
-
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>

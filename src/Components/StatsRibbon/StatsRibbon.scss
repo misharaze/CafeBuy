@@ -1,0 +1,124 @@
+@import "../../styles/main.scss";
+
+.stats-ribbon {
+  position: relative;
+  overflow: hidden;
+  margin: 6rem 0;
+  padding: 2.5rem 0;
+  background: linear-gradient(
+    145deg,
+    #1f1b18,
+    #26211e
+  );
+  border-top: 1px solid rgba(198,156,109,.25);
+  border-bottom: 1px solid rgba(198,156,109,.25);
+}
+
+.ribbon-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(198,156,109,.18),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.stats-track {
+  display: flex;
+  gap: 5rem;
+  width: max-content;
+  padding-left: 5rem;
+}
+
+.stat-item {
+  min-width: 220px;
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-shadow:
+    0 0 10px rgba(198,156,109,.55),
+    0 0 25px rgba(198,156,109,.25);
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+.stat-label {
+  display: block;
+  margin-top: .4rem;
+  font-size: .95rem;
+  color: var(--text);
+  opacity: .85;
+  letter-spacing: .04em;
+}
+
+/* ✨ мягкое свечение цифр */
+@keyframes glowPulse {
+  0% {
+    text-shadow:
+      0 0 6px rgba(198,156,109,.35),
+      0 0 16px rgba(198,156,109,.2);
+  }
+  50% {
+    text-shadow:
+      0 0 14px rgba(198,156,109,.8),
+      0 0 34px rgba(198,156,109,.4);
+  }
+  100% {
+    text-shadow:
+      0 0 6px rgba(198,156,109,.35),
+      0 0 16px rgba(198,156,109,.2);
+  }
+}
+
+/* ---------- ADAPTIVE ---------- */
+@media (max-width: 768px) {
+  .stat-value {
+    font-size: 2rem;
+  }
+
+  .stat-item {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-track {
+    gap: 3rem;
+  }
+
+  .stat-value {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stats-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stat-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-ribbon {
+    padding: 2.5rem 1.5rem;
+    margin: 3rem 0;
+  }
+
+  .stat-item {
+    width: 100%;
+  }
+
+  .stat-item .value {
+    font-size: 2rem;
+  }
+}

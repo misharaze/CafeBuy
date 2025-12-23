@@ -1,8 +1,10 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import "./Button.scss";
 
-export default function MagicButton({ text }) {
-
+export default function MagicButton({
+  text,
+  size = "md"
+}) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -22,31 +24,21 @@ export default function MagicButton({ text }) {
 
   return (
     <motion.button
-      className="magic-button"
-      style={{
-        rotateX,
-        rotateY,
-      }}
+      className={`magic-button magic-${size}`}
+      style={{ rotateX, rotateY }}
       whileHover={{
         scale: 1.08,
         boxShadow: "0 0 25px rgba(198,156,109,0.45)"
       }}
-      whileTap={{
-        scale: 0.97
-      }}
+      whileTap={{ scale: 0.97 }}
       onMouseMove={handleMouseMove}
       onMouseLeave={reset}
     >
       <span>{text}</span>
       <motion.div
         className="glow"
-        animate={{
-          opacity: [0.2, 0.6, 0.2],
-        }}
-        transition={{
-          duration: 3,
-          repeat: Infinity,
-        }}
+        animate={{ opacity: [0.2, 0.6, 0.2] }}
+        transition={{ duration: 3, repeat: Infinity }}
       />
     </motion.button>
   );

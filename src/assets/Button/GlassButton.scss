@@ -89,4 +89,36 @@
     padding: 10px 28px;
     font-size: .88rem;
   }
+}.glass-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
 }
+
+/* S */
+.glass-sm {
+  width: 150px;
+  height: 42px;
+  font-size: 13px;
+}
+
+/* M (default) */
+.glass-md {
+  width: 180px;
+  height: 48px;
+  font-size: 14px;
+}
+
+/* L */
+.glass-lg {
+  width: 220px;
+  height: 56px;
+  font-size: 16px;
+}
+

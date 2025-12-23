@@ -1,10 +1,32 @@
 .magic-button {
-  background: linear-gradient(#c69c6d, #b28a55);
-  border: 1px solid rgba(255,255,255,0.15);
-  box-shadow: 0 4px 12px rgba(198,156,109,0.35);
-  font-family: "Poppins", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  padding: 0;
+}
 
-  &:hover {
-    box-shadow: 0 0 26px rgba(198,156,109,0.55);
-  }
+/* S */
+.magic-sm {
+  width: 150px;
+  height: 42px;
+  font-size: 13px;
+}
+
+/* M */
+.magic-md {
+  width: 180px;
+  height: 48px;
+  font-size: 14px;
+}
+
+/* L */
+.magic-lg {
+  width: 220px;
+  height: 56px;
+  font-size: 16px;
 }

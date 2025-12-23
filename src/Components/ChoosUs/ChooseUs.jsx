@@ -17,7 +17,7 @@ function ChooseUs() {
           <h2>Почему выбирают нас</h2>
           <p>Мы заботимся о вкусе, уюте и каждом клиенте.</p>
           <Link to="/advantages">
-            <MagicButton text="Посмотреть всё" />
+            <MagicButton size='sm' text="Посмотреть всё" />
           </Link>
         </div>
 

@@ -12,6 +12,7 @@ import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import MagicButton from '../../assets/Button/Button';
 import GlassButton from '../../assets/Button/GlassButton.jsx';
+import StatsRibbon from '../../Components/StatsRibbon/StatsRibbon.jsx';
 
 export default function Home() {
   return (
@@ -71,10 +72,10 @@ export default function Home() {
                 transition={{ delay: 0.6 }}
               >
                 <Link to="/menu">
-                  <GlassButton text="Смотреть меню" />
+                  <GlassButton size='sm' text="Смотреть меню" />
                 </Link>
                 <Link to="/contact">
-                  <MagicButton text="Связаться с нами" />
+                  <MagicButton size='sm' text="Связаться с нами" />
                 </Link>
               </motion.div>
 
@@ -110,6 +111,7 @@ export default function Home() {
       </section>
 
       <ScrollReveal><About /></ScrollReveal>
+      <ScrollReveal><StatsRibbon /></ScrollReveal>
       <ScrollReveal><Gallery /></ScrollReveal>
       <ScrollReveal><ChooseUs /></ScrollReveal>
       <ScrollReveal><Reviews /></ScrollReveal>
