@@ -1,5 +1,5 @@
 import './Footer.scss';
-import { FaInstagram, FaFacebookF, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
   return (

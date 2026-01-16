@@ -1,7 +1,7 @@
 import './About.scss';
 import Interiors from '../../assets/img/interiors.jpg';
 import { Link } from "react-router-dom";
-import MagicButton from '../../assets/Button/Button';
+//import MagicButton from '../../assets/Button/Button';
 import { motion } from "framer-motion";
 import { Coffee, Heart, Sparkles } from "lucide-react";
 import UIActionButton from '../../assets/Button/UIActionButton';

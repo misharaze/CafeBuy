@@ -16,7 +16,7 @@ export default function ProductModal({ product, onClose, onAdd }) {
     const esc = (e) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", esc);
     return () => window.removeEventListener("keydown", esc);
-  }, []);
+  }, [onClose]);
 
   if (!product) return null;
 
