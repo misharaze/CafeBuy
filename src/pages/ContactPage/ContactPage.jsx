@@ -19,7 +19,7 @@ export default function ContactPage() {
         reset();
       })
       .catch((err) => {
-        console.error('Ошибка:', err);
+        console.error('Erreur :', err);
         setSending(false);
       });
   };
@@ -34,7 +34,7 @@ export default function ContactPage() {
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       >
-        Связаться с нами
+        Nous contacter
       </motion.h2>
 
       <AnimatePresence>
@@ -45,8 +45,8 @@ export default function ContactPage() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            Сообщение отправлено! ☕  
-            Мы свяжемся с вами в ближайшее время.  
+            Message envoyé ☕  
+            Nous vous contacterons très prochainement.
           </motion.p>
         ) : (
           <motion.form
@@ -56,26 +56,28 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
           >
             <div className="input-wrapper">
-              <input {...register('name', { required: 'Введите имя' })} />
-              <label>Имя</label>
+              <input {...register('name', { required: 'Veuillez saisir votre nom' })} />
+              <label>Nom</label>
               {errors.name && <span className="error">{errors.name.message}</span>}
             </div>
 
             <div className="input-wrapper">
-              <input {...register('email', {
-                required: 'Введите email',
-                pattern: {
-                  value: /^\S+@\S+\.\S+$/,
-                  message: 'Неверный формат email'
-                }
-              })} />
+              <input
+                {...register('email', {
+                  required: 'Veuillez saisir votre email',
+                  pattern: {
+                    value: /^\S+@\S+\.\S+$/,
+                    message: 'Format d’email invalide'
+                  }
+                })}
+              />
               <label>Email</label>
               {errors.email && <span className="error">{errors.email.message}</span>}
             </div>
 
             <div className="input-wrapper">
-              <textarea {...register('message', { required: 'Введите сообщение' })} />
-              <label>Сообщение</label>
+              <textarea {...register('message', { required: 'Veuillez saisir votre message' })} />
+              <label>Message</label>
               {errors.message && <span className="error">{errors.message.message}</span>}
             </div>
 
@@ -85,7 +87,7 @@ export default function ContactPage() {
               whileHover={{ scale: 1.05, boxShadow: "0 0 16px rgba(198,156,109,0.4)" }}
               whileTap={{ scale: 0.97 }}
             >
-              {sending ? "Отправка..." : "Отправить"}
+              {sending ? "Envoi en cours..." : "Envoyer"}
             </motion.button>
           </motion.form>
         )}

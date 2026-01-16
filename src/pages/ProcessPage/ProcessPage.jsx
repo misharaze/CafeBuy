@@ -1,3 +1,4 @@
+
 import './ProcessPage.scss';
 import { motion } from 'framer-motion';
 
@@ -9,10 +10,10 @@ export default function ProcessPage() {
       animate={{ opacity: 1 }}
     >
       <header>
-        <h1>Процесс приготовления</h1>
+        <h1>Notre méthode de préparation</h1>
         <p>
-          Мы верим, что настоящее удовольствие начинается 
-          с внимания к деталям на каждом этапе — от зерна до чашки.
+          Nous croyons que le véritable plaisir commence par l’attention
+          portée aux moindres détails, à chaque étape — du grain à la tasse.
         </p>
       </header>
 
@@ -24,10 +25,10 @@ export default function ProcessPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2>1. Выбор зерна</h2>
+          <h2>1. Sélection des grains</h2>
           <p>
-            Мы используем тщательно отобранные бобы арабики,
-            произрастающие на плантациях Южной Америки и Африки.
+            Nous utilisons des grains d’arabica soigneusement sélectionnés,
+            cultivés sur des plantations d’Amérique du Sud et d’Afrique.
           </p>
         </motion.div>
 
@@ -37,10 +38,10 @@ export default function ProcessPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2>2. Обжарка</h2>
+          <h2>2. Torréfaction</h2>
           <p>
-            Каждая партия обжаривается малыми объёмами, 
-            чтобы сохранить уникальный аромат и вкус.
+            Chaque lot est torréfié en petites quantités afin de préserver
+            toute la richesse des arômes et des saveurs.
           </p>
         </motion.div>
 
@@ -50,10 +51,10 @@ export default function ProcessPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2>3. Помол</h2>
+          <h2>3. Mouture</h2>
           <p>
-            Молим зерна непосредственно перед приготовлением —
-            для максимальной свежести и аромата.
+            Les grains sont moulus juste avant la préparation,
+            pour une fraîcheur et un parfum incomparables.
           </p>
         </motion.div>
 
@@ -63,17 +64,17 @@ export default function ProcessPage() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <h2>4. Приготовление</h2>
+          <h2>4. Préparation</h2>
           <p>
-            Бариста подбирают идеальную технологию — эспрессо,
-            пуровер, френч-пресс — исходя из сорта и вкуса.
+            Nos baristas choisissent la méthode idéale — espresso,
+            pour-over ou presse française — selon l’origine et le profil du café.
           </p>
         </motion.div>
 
       </section>
 
       <footer>
-        <p>Каждая чашка — маленькое искусство.</p>
+        <p>Chaque tasse est une petite œuvre d’art.</p>
       </footer>
     </motion.div>
   );

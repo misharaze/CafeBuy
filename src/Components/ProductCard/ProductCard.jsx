@@ -22,7 +22,7 @@ export default function ProductCard({ product, onAddToCart, onOpen }) {
       />
 
       <div className="product-info">
-        {/* 🌟 СВЕТЯЩЕЕСЯ НАЗВАНИЕ */}
+       
         <motion.h3
           className="glow-title"
           animate={{
@@ -41,7 +41,7 @@ export default function ProductCard({ product, onAddToCart, onOpen }) {
         <p className="price">{product.price.toFixed(2)} €</p>
 
         <MenuActionButton size="large" onClick={() => onAddToCart(product)}>
-          В корзину
+          Dans le panier
         </MenuActionButton>
       </div>
     </motion.div>

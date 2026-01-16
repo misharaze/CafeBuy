@@ -14,10 +14,10 @@ function ChooseUs() {
     >
       <div className="container">
         <div className="left">
-          <h2>Почему выбирают нас</h2>
-          <p>Мы заботимся о вкусе, уюте и каждом клиенте.</p>
+          <h2>Pourquoi nous choisir</h2>
+          <p>Nous prenons soin du goût, du confort et de chaque client.</p>
           <Link to="/advantages">
-            <MagicButton size='sm' text="Посмотреть всё" />
+            <MagicButton size="sm" text="Tout découvrir" />
           </Link>
         </div>
 
@@ -31,10 +31,10 @@ function ChooseUs() {
           }}
         >
           {[
-            { icon: <FaClock />, title: "Быстрое обслуживание", text: "Без задержек" },
-            { icon: <FaMagic />, title: "Атмосфера", text: "Уют и музыка" },
-            { icon: <FaCheckCircle />, title: "Свежие продукты", text: "Натуральные ингредиенты" },
-            { icon: <FaCogs />, title: "Онлайн-заказ", text: "Удобно и быстро" },
+            { icon: <FaClock />, title: "Service rapide", text: "Sans attente inutile" },
+            { icon: <FaMagic />, title: "Ambiance", text: "Chaleur et musique" },
+            { icon: <FaCheckCircle />, title: "Produits frais", text: "Ingrédients naturels" },
+            { icon: <FaCogs />, title: "Commande en ligne", text: "Simple et efficace" },
           ].map((f) => (
             <motion.div
               className="feature"

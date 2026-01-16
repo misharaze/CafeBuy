@@ -3,9 +3,9 @@ import { useState, useEffect } from "react";
 import './ProductModal.scss';
 
 const sizes = [
-  { label: "Маленький", multiplier: 1 },
-  { label: "Средний", multiplier: 1.3 },
-  { label: "Большой", multiplier: 1.6 },
+  { label: "Petit", multiplier: 1 },
+  { label: "Moyen", multiplier: 1.3 },
+  { label: "Grand", multiplier: 1.6 },
 ];
 
 export default function ProductModal({ product, onClose, onAdd }) {
@@ -125,7 +125,7 @@ export default function ProductModal({ product, onClose, onAdd }) {
                 onClose();
               }}
             >
-              Добавить в корзину
+              Ajouter au panier
             </motion.button>
 
             <motion.button
@@ -133,7 +133,7 @@ export default function ProductModal({ product, onClose, onAdd }) {
               onClick={onClose}
               whileHover={{ opacity: 0.7 }}
             >
-              Закрыть
+              Fermer
             </motion.button>
 
           </div>

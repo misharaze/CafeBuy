@@ -53,7 +53,7 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
               >
-                Добро пожаловать
+                Bienvenue
               </motion.h1>
 
               <motion.p
@@ -62,7 +62,8 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.4 }}
               >
-                Винтажная кофейня с ароматом свежей выпечки и уютной атмосферой
+                Un café vintage au parfum de pâtisseries fraîches
+                et à l’atmosphère chaleureuse
               </motion.p>
 
               <motion.div
@@ -72,10 +73,10 @@ export default function Home() {
                 transition={{ delay: 0.6 }}
               >
                 <Link to="/menu">
-                  <GlassButton size='sm' text="Смотреть меню" />
+                  <GlassButton size="sm" text="Voir le menu" />
                 </Link>
                 <Link to="/contact">
-                  <MagicButton size='sm' text="Связаться с нами" />
+                  <MagicButton size="sm" text="Nous contacter" />
                 </Link>
               </motion.div>
 
@@ -85,9 +86,18 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
               >
-                <div className="feature"><Coffee size={28} /><span>Арабика 100%</span></div>
-                <div className="feature"><Timer size={28} /><span>Готовим за 3 минуты</span></div>
-                <div className="feature"><Leaf size={28} /><span>Натуральные ингредиенты</span></div>
+                <div className="feature">
+                  <Coffee size={28} />
+                  <span>100 % Arabica</span>
+                </div>
+                <div className="feature">
+                  <Timer size={28} />
+                  <span>Prêt en 3 minutes</span>
+                </div>
+                <div className="feature">
+                  <Leaf size={28} />
+                  <span>Ingrédients naturels</span>
+                </div>
               </motion.div>
             </motion.div>
 
@@ -103,7 +113,7 @@ export default function Home() {
                 <span className="steam s2" />
                 <span className="steam s3" />
               </div>
-              <img src={Cofee} alt="Кофе" />
+              <img src={Cofee} alt="Café" />
             </motion.div>
 
           </div>

@@ -7,10 +7,10 @@ export default function CartPage() {
 
   return (
     <div className="page cart-page">
-      <h2>Корзина</h2>
+      <h2>Panier</h2>
 
       {cartItems.length === 0 ? (
-        <p>Ваша корзина пуста.</p>
+        <p>Votre panier est vide.</p>
       ) : (
         <>
           <ul className="cart-list">
@@ -21,14 +21,18 @@ export default function CartPage() {
                   <h4>{item.name}</h4>
                   <p>{item.quantity} × {item.price.toFixed(2)} €</p>
                 </div>
-                <MenuActionButton onClick={() => removeFromCart(item.id)}>Удалить</MenuActionButton>
+                <MenuActionButton onClick={() => removeFromCart(item.id)}>
+                  Supprimer
+                </MenuActionButton>
               </li>
             ))}
           </ul>
 
           <div className="cart-summary">
-            <p>Итого: {getTotal().toFixed(2)} €</p>
-            <MenuActionButton onClick={clearCart} className="clear-btn">Очистить корзину</MenuActionButton>
+            <p>Total : {getTotal().toFixed(2)} €</p>
+            <MenuActionButton onClick={clearCart} className="clear-btn">
+              Vider le panier
+            </MenuActionButton>
           </div>
         </>
       )}

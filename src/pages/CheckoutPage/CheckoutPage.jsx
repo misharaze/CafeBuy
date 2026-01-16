@@ -1,9 +1,8 @@
-import { useForm, } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { useState } from 'react';
 import { useCart } from '../../Context/CartContext.jsx';
 import emailjs from '@emailjs/browser';
 import './CheckoutPage.scss';
-
 
 export default function CheckoutPage() {
   const { cartItems, getTotal, clearCart } = useCart();
@@ -31,40 +30,48 @@ export default function CheckoutPage() {
 
   return (
     <div className="page checkout-page">
-      <h2>Оформление заказа</h2>
+      <h2>Finalisation de la commande</h2>
+
       {sent ? (
-        <p className="success">Спасибо за заказ! Мы свяжемся с вами.</p>
+        <p className="success">
+          Merci pour votre commande ! Nous vous contacterons très prochainement.
+        </p>
       ) : (
         <form onSubmit={handleSubmit(onSubmit)} className="checkout-form">
+
           <label>
-            Имя
-            <input {...register('name', { required: 'Введите имя' })} />
+            Nom
+            <input {...register('name', { required: 'Veuillez saisir votre nom' })} />
             {errors.name && <span className="error">{errors.name.message}</span>}
           </label>
 
           <label>
-            Телефон
-            <input {...register('phone', {
-              required: 'Введите номер телефона',
-              pattern: {
-                value: /^[+0-9\s\-()]{7,20}$/,
-                message: 'Некорректный формат телефона'
-              }
-            })} />
+            Téléphone
+            <input
+              {...register('phone', {
+                required: 'Veuillez saisir votre numéro de téléphone',
+                pattern: {
+                  value: /^[+0-9\s\-()]{7,20}$/,
+                  message: 'Format de téléphone incorrect'
+                }
+              })}
+            />
             {errors.phone && <span className="error">{errors.phone.message}</span>}
           </label>
 
           <label>
-            Время получения
-            <input {...register('time')} placeholder="напр. 15:00" />
+            Heure de retrait
+            <input {...register('time')} placeholder="ex. 15:00" />
           </label>
 
           <label>
-            Комментарий
+            Commentaire
             <textarea {...register('comment')} />
           </label>
 
-          <button type="submit">Отправить заказ</button>
+          <button type="submit">
+            Envoyer la commande
+          </button>
         </form>
       )}
     </div>

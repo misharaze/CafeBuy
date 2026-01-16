@@ -19,19 +19,19 @@ export default function MenuPage() {
     <div className="page menu-page">
 
       <section className="menu-hero">
-        <h1>Меню нашей кофейни</h1>
-        <p>Авторские напитки и выпечка — с заботой и атмосферой.</p>
+        <h1>Le menu de notre café</h1>
+        <p>Boissons signature et pâtisseries — avec soin et atmosphère.</p>
       </section>
 
       <div className="filter-buttons">
         <MenuFilterButton active={filter === 'all'} onClick={() => setFilter('all')}>
-          Все
+          Tout
         </MenuFilterButton>
         <MenuFilterButton active={filter === 'coffee'} onClick={() => setFilter('coffee')}>
-          Кофе
+          Café
         </MenuFilterButton>
         <MenuFilterButton active={filter === 'pastry'} onClick={() => setFilter('pastry')}>
-          Выпечка
+          Pâtisseries
         </MenuFilterButton>
       </div>
 

@@ -14,9 +14,10 @@ export default function Gallery() {
       transition={{ duration: 0.8 }}
     >
       <div className="gallery-header">
-        <h2>Атмосфера Café Nostalgie</h2>
+        <h2>L’atmosphère de Café Nostalgie</h2>
         <p>
-          Каждая деталь нашего пространства создана для уюта и наслаждения моментом.
+          Chaque détail de notre espace est pensé pour le confort
+          et le plaisir de savourer l’instant.
         </p>
       </div>
 
@@ -25,7 +26,7 @@ export default function Gallery() {
           <motion.img
             key={i}
             src={img}
-            alt="Gallery"
+            alt="Galerie Café Nostalgie"
             whileHover={{ scale: 1.06 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           />

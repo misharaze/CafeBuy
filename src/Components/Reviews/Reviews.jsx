@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 const reviews = [
   {
     name: 'Émilie',
-    text: 'Латте здесь — мой утренний ритуал.',
-    role: 'Постоянный гость'
+    text: 'Le latte ici est mon rituel du matin.',
+    role: 'Cliente fidèle'
   },
   {
     name: 'Lucas',
-    text: 'Отличное место для работы и отдыха.',
-    role: 'Фрилансер'
+    text: 'Un endroit parfait pour travailler et se détendre.',
+    role: 'Freelance'
   },
   {
     name: 'Sophie',
-    text: 'Идеальный капучино и атмосфера.',
-    role: 'Ценитель кофе'
+    text: 'Un cappuccino parfait et une ambiance unique.',
+    role: 'Amatrice de café'
   },
 ];
 
@@ -29,8 +29,8 @@ export default function Reviews() {
       transition={{ duration: 0.8 }}
     >
       <div className="reviews-header">
-        <h2>Отзывы гостей</h2>
-        <p>Несколько слов от наших посетителей.</p>
+        <h2>Avis de nos clients</h2>
+        <p>Quelques mots de la part de nos visiteurs.</p>
       </div>
 
       <div className="reviews-grid">

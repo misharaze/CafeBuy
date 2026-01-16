@@ -16,18 +16,15 @@ export default function Header() {
   const toggleTheme = () => {
     setTheme(prev => (prev === "dark" ? "light" : "dark"));
   };
-  
-
-
 
   useEffect(() => {
     const handleScroll = () => {
       const current = window.scrollY;
 
       if (current > lastScroll.current && current > 80) {
-        setHidden(true);   // вниз — скрываем
+        setHidden(true);   // scroll down — hide
       } else {
-        setHidden(false);  // вверх — показываем
+        setHidden(false);  // scroll up — show
       }
 
       lastScroll.current = current;
@@ -39,7 +36,7 @@ export default function Header() {
 
   return (
     <motion.header
-      className="header"
+      className={`header ${hidden ? "hidden" : ""}`}
       initial={{ y: -80, opacity: 0 }}
       animate={{
         y: hidden ? -90 : 0,
@@ -51,14 +48,22 @@ export default function Header() {
 
         {/* LOGO */}
         <Link to="/" className="logo">
-          Кофейня радуга
+          Café Arc-en-ciel
         </Link>
 
         {/* DESKTOP LINKS */}
         <ul className="nav-links desktop">
-          {["Меню", "Корзина", "Контакты"].map((item, i) => (
+          {["Menu", "Panier", "Contact"].map((item, i) => (
             <li key={i}>
-              <NavLink to={`/${item === "Меню" ? "menu" : item === "Корзина" ? "cart" : "contact"}`}>
+              <NavLink
+                to={`/${
+                  item === "Menu"
+                    ? "menu"
+                    : item === "Panier"
+                    ? "cart"
+                    : "contact"
+                }`}
+              >
                 <span>{item}</span>
               </NavLink>
             </li>
@@ -87,24 +92,27 @@ export default function Header() {
               transition={{ duration: 0.3 }}
             >
               <li onClick={() => setOpen(false)}>
-                <NavLink to="/menu">Меню</NavLink>
+                <NavLink to="/menu">Menu</NavLink>
               </li>
               <li onClick={() => setOpen(false)}>
-                <NavLink to="/cart">Корзина</NavLink>
+                <NavLink to="/cart">Panier</NavLink>
               </li>
               <li onClick={() => setOpen(false)}>
-                <NavLink to="/contact">Контакты</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
               </li>
             </motion.ul>
           )}
         </AnimatePresence>
+
+        {/* THEME SWITCH */}
         <div className="switch-wrapper" onClick={toggleTheme}>
-  <motion.div
-    className={`switch-knob ${theme === "light" ? "light" : ""}`}
-    layout
-    transition={{ type: "spring", stiffness: 300, damping: 22 }}
-  />
-</div>
+          <motion.div
+            className={`switch-knob ${theme === "light" ? "light" : ""}`}
+            layout
+            transition={{ type: "spring", stiffness: 300, damping: 22 }}
+          />
+        </div>
+
       </nav>
     </motion.header>
   );

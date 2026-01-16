@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import MagicButton from '../../assets/Button/Button';
 import { motion } from "framer-motion";
 import { Coffee, Heart, Sparkles } from "lucide-react";
+import UIActionButton from '../../assets/Button/UIActionButton';
 
 export default function AboutSection() {
   return (
@@ -21,13 +22,12 @@ export default function AboutSection() {
       >
    
         <div className="card-image">
-          <img src={Interiors} alt="Интерьер кафе" />
+          <img src={Interiors} alt="Intérieur du café" />
           <Link to="/coffee-varieties">
-            <MagicButton size="lg" text="Наши сорта кофе" />
+            <UIActionButton size="sm" text="Nos cafés" />
           </Link>
         </div>
 
-  
         <div className="card-text">
 
           <motion.h2
@@ -35,7 +35,7 @@ export default function AboutSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Добро пожаловать в наш кофейный рай
+            Bienvenue dans notre paradis du café
           </motion.h2>
 
           <motion.p
@@ -44,28 +44,27 @@ export default function AboutSection() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.35 }}
           >
-            Café Nostalgie — это больше, чем просто кофейня.
-            Это место, где утро начинается медленно,
-            а каждый глоток возвращает к простым радостям жизни.
+            Café Nostalgie, c’est bien plus qu’un simple café.
+            C’est un lieu où les matins commencent lentement,
+            et où chaque gorgée ramène aux plaisirs simples de la vie.
           </motion.p>
-
 
           <div className="about-features">
             {[
               {
                 icon: <Coffee size={22} />,
-                title: "Ручная обжарка",
-                text: "Мы работаем только с отборными зернами и контролируем вкус на каждом этапе."
+                title: "Torréfaction artisanale",
+                text: "Nous travaillons uniquement avec des grains sélectionnés et maîtrisons chaque étape du goût."
               },
               {
                 icon: <Heart size={22} />,
-                title: "Забота о гостях",
-                text: "Мы создаём атмосферу, в которую хочется возвращаться снова и снова."
+                title: "Attention portée aux clients",
+                text: "Nous créons une atmosphère dans laquelle on a envie de revenir encore et encore."
               },
               {
                 icon: <Sparkles size={22} />,
-                title: "Внимание к деталям",
-                text: "От света и музыки до текстуры чашки — всё имеет значение."
+                title: "Souci du détail",
+                text: "De la lumière à la musique, jusqu’à la texture de la tasse — chaque détail compte."
               }
             ].map((item, i) => (
               <motion.div
@@ -90,14 +89,14 @@ export default function AboutSection() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
-            Мы вдохновляемся французскими кофейнями,
-            где важны не скорость, а ощущения.
-            Здесь можно остановиться, поговорить,
-            поработать или просто побыть наедине с собой.
+            Nous nous inspirons des cafés français,
+            où l’important n’est pas la vitesse, mais le ressenti.
+            Ici, on peut s’arrêter, discuter,
+            travailler ou simplement être avec soi-même.
           </motion.p>
 
           <Link to="/process">
-            <MagicButton  size="sm"  text="О процессе приготовления" />
+            <UIActionButton size="sm" text="Notre méthode de préparation" />
           </Link>
         </div>
       </motion.div>

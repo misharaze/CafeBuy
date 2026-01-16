@@ -10,10 +10,11 @@ export default function AdvantagesPage() {
       animate={{ opacity: 1 }}
     >
       <header>
-        <h1>Почему нас выбирают</h1>
+        <h1>Pourquoi nous choisir</h1>
         <p>
-          Мы стремимся создать не просто кофейню, а место, куда хочется возвращаться.
-          Здесь ценят детали, качество и заботу.
+          Nous souhaitons créer bien plus qu’un simple café : un lieu où l’on a envie
+          de revenir. Ici, chaque détail compte, tout comme la qualité et l’attention
+          portée à nos clients.
         </p>
       </header>
 
@@ -26,67 +27,98 @@ export default function AdvantagesPage() {
           viewport={{ once: true }}
         >
           <FaClock className="icon" />
-          <h3>Скорость и качество</h3>
+          <h3>Rapidité et qualité</h3>
           <p>
-            Мы моделируем процессы, чтобы вы получали напиток и выпечку
-            максимально быстро — без ущерба для вкуса.
+            Nous optimisons chaque étape afin que vous receviez votre boisson et vos
+            pâtisseries rapidement, sans jamais compromettre le goût.
           </p>
         </motion.div>
 
-        <motion.div className="adv-card" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}>
+        <motion.div
+          className="adv-card"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
           <FaMagic className="icon" />
-          <h3>Уютная атмосфера</h3>
+          <h3>Ambiance chaleureuse</h3>
           <p>
-            Винтажные интерьеры, спокойная музыка и живой аромат —
-            идеальный фон для работы, встреч и отдыха.
+            Intérieurs vintage, musique douce et arômes enveloppants —
+            le cadre idéal pour travailler, se retrouver ou se détendre.
           </p>
         </motion.div>
 
-        <motion.div className="adv-card" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}>
+        <motion.div
+          className="adv-card"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
           <FaCheckCircle className="icon" />
-          <h3>Свежие продукты</h3>
+          <h3>Produits frais</h3>
           <p>
-            Ингредиенты поставляются ежедневно — мы работаем только с проверенными
-            поставщиками и фермерскими хозяйствами.
+            Nos ingrédients sont livrés chaque jour. Nous collaborons uniquement avec
+            des fournisseurs fiables et des producteurs locaux.
           </p>
         </motion.div>
 
-        <motion.div className="adv-card" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}>
+        <motion.div
+          className="adv-card"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
           <FaCogs className="icon" />
-          <h3>Онлайн-заказ</h3>
+          <h3>Commande en ligne</h3>
           <p>
-            Удобный предзаказ, самовывоз, корзина — всё на сайте и с мобильных устройств.
+            Précommande, retrait sur place, panier — tout est accessible sur le site
+            et depuis votre mobile.
           </p>
         </motion.div>
 
-        <motion.div className="adv-card" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}>
+        <motion.div
+          className="adv-card"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
           <FaLeaf className="icon" />
-          <h3>Экологичность</h3>
+          <h3>Engagement écologique</h3>
           <p>
-            Мы используем биоразлагаемую упаковку и минимизируем отходы.
+            Nous utilisons des emballages biodégradables et réduisons au maximum
+            notre impact environnemental.
           </p>
         </motion.div>
 
-        <motion.div className="adv-card" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}>
+        <motion.div
+          className="adv-card"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
           <FaHandshake className="icon" />
-          <h3>Дружелюбие</h3>
+          <h3>Accueil convivial</h3>
           <p>
-            Мы встречаем каждого гостя с улыбкой и ценим постоянных клиентов.
+            Chaque client est accueilli avec le sourire, et nous attachons une
+            importance particulière à nos habitués.
           </p>
         </motion.div>
 
-        <motion.div className="adv-card" initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }}>
+        <motion.div
+          className="adv-card"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+        >
           <FaCoffee className="icon" />
-          <h3>Уникальные напитки</h3>
+          <h3>Boissons uniques</h3>
           <p>
-            Мы разрабатываем авторские рецепты — каждый сезон у нас новые вкусы.
+            Nous créons des recettes signature — à chaque saison, de nouvelles
+            saveurs à découvrir.
           </p>
         </motion.div>
 
       </section>
 
       <footer>
-        <p>Мы работаем, чтобы ваш визит был не просто покупкой, а впечатлением.</p>
+        <p>
+          Nous travaillons pour que chaque visite soit bien plus qu’un achat :
+          une véritable expérience.
+        </p>
       </footer>
     </motion.div>
   );

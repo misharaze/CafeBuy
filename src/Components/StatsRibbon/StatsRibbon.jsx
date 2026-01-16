@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import "./StatsRibbon.scss";
 
 const stats = [
-  { value: "25+", label: "Авторских напитков" },
-  { value: "1 250+", label: "Довольных гостей" },
-  { value: "8+", label: "Лет опыта" },
-  { value: "100%", label: "Арабика" },
-  { value: "12", label: "Бариста-профессионалов" },
-  { value: "4.9 ★", label: "Средний рейтинг" }
+  { value: "25+", label: "Boissons signature" },
+  { value: "1 250+", label: "Clients satisfaits" },
+  { value: "8+", label: "Années d’expérience" },
+  { value: "100%", label: "Arabica" },
+  { value: "12", label: "Baristas professionnels" },
+  { value: "4,9 ★", label: "Note moyenne" }
 ];
 
 export default function StatsRibbon() {

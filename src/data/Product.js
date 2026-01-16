@@ -6,55 +6,54 @@ import chocolat from "../assets/img/Menu/painchocolat.jpg"
 import muffin from "../assets/img/Menu/muffin.jpg"
 
 const products = [
-    {
-      id: 'coffee-espresso',
-      name: 'Эспрессо',
-      description: 'Маленькая порция крепкого итальянского кофе',
-      price: 2.5,
-      category: 'coffee',
-      image: expresso,
-    },
-    {
-      id: 'coffee-latte',
-      name: 'Латте',
-      description: 'Нежный кофе с молоком и тонкой пенкой',
-      price: 3.5,
-      category: 'coffee',
-      image: latte,
-    },
-    {
-      id: 'coffee-cappuccino',
-      name: 'Капучино',
-      description: 'Итальянский кофе с молочной пенкой',
-      price: 3.2,
-      category: 'coffee',
-      image: cappucino,
-    },
-    {
-      id: 'pastry-croissant',
-      name: 'Круассан',
-      description: 'Свежий французский круассан из слоёного теста',
-      price: 2.0,
-      category: 'pastry',
-      image: croissant,
-    },
-    {
-      id: 'pastry-pain-au-chocolat',
-      name: 'Пен-о-шоколад',
-      description: 'Слоёная булочка с шоколадом внутри',
-      price: 2.3,
-      category: 'pastry',
-      image: chocolat,
-    },
-    {
-      id: 'pastry-muffin',
-      name: 'Маффин с черникой',
-      description: 'Домашний маффин с лесной черникой',
-      price: 2.8,
-      category: 'pastry',
-      image: muffin ,
-    },
-  ];
-  
-  export default products;
-  
+  {
+    id: 'coffee-espresso',
+    name: 'Espresso',
+    description: 'Petite tasse de café italien intense',
+    price: 2.5,
+    category: 'coffee',
+    image: expresso,
+  },
+  {
+    id: 'coffee-latte',
+    name: 'Latte',
+    description: 'Café doux au lait avec une mousse légère',
+    price: 3.5,
+    category: 'coffee',
+    image: latte,
+  },
+  {
+    id: 'coffee-cappuccino',
+    name: 'Cappuccino',
+    description: 'Café italien à la mousse de lait onctueuse',
+    price: 3.2,
+    category: 'coffee',
+    image: cappucino,
+  },
+  {
+    id: 'pastry-croissant',
+    name: 'Croissant',
+    description: 'Croissant français frais en pâte feuilletée',
+    price: 2.0,
+    category: 'pastry',
+    image: croissant,
+  },
+  {
+    id: 'pastry-pain-au-chocolat',
+    name: 'Pain au chocolat',
+    description: 'Viennoiserie feuilletée garnie de chocolat',
+    price: 2.3,
+    category: 'pastry',
+    image: chocolat,
+  },
+  {
+    id: 'pastry-muffin',
+    name: 'Muffin aux myrtilles',
+    description: 'Muffin maison aux myrtilles sauvages',
+    price: 2.8,
+    category: 'pastry',
+    image: muffin,
+  },
+];
+
+export default products;

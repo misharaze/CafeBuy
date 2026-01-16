@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="container">
         <div className="branding">
           <h3>Café Nostalgie</h3>
-          <p>Винтаж с ароматом кофе © 2025</p>
+          <p>Un parfum de vintage et de café © 2025</p>
         </div>
 
         <div className="contact">
-          <p><FaMapMarkerAlt /> Париж, ул. Кофейная, 7</p>
+          <p><FaMapMarkerAlt /> Paris, rue du Café, 7</p>
           <p><FaEnvelope /> hello@nostalgie.fr</p>
         </div>
 

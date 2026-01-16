@@ -3,20 +3,20 @@ import { motion } from 'framer-motion';
 
 const varieties = [
   {
-    name: "Эфиопия",
-    notes: "Ягодные оттенки, лёгкая кислинка",
+    name: "Éthiopie",
+    notes: "Notes fruitées, acidité légère",
   },
   {
-    name: "Бразилия",
-    notes: "Орехи, молочный шоколад, карамель",
+    name: "Brésil",
+    notes: "Noisette, chocolat au lait, caramel",
   },
   {
-    name: "Колумбия",
-    notes: "Цитрусовые нотки, ягодная сладость",
+    name: "Colombie",
+    notes: "Touches d’agrumes, douceur fruitée",
   },
   {
-    name: "Кения",
-    notes: "Винные оттенки, яркая кислотность",
+    name: "Kenya",
+    notes: "Notes vineuses, acidité vive",
   }
 ];
 
@@ -28,10 +28,10 @@ export default function VarietiesPage() {
       animate={{ opacity: 1 }}
     >
       <header>
-        <h1>Наши сорта кофе</h1>
+        <h1>Nos variétés de café</h1>
         <p>
-          Мы работаем с небольшими фермерскими хозяйствами 
-          и тщательно отбираем каждую партию.
+          Nous travaillons avec de petites exploitations agricoles
+          et sélectionnons chaque lot avec le plus grand soin.
         </p>
       </header>
 
