@@ -16,8 +16,32 @@ export default function Footer() {
         </div>
 
         <div className="social">
-          <a href="#"><FaInstagram /></a>
-          <a href="#"><FaFacebookF /></a>
+               <a
+    href="https://vk.com/your_profile"
+    aria-label="VK"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    VK
+  </a>
+
+  <a
+    href="https://www.instagram.com/your_profile"
+    aria-label="Instagram"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Instagram
+  </a>
+
+  <a
+    href="https://www.pinterest.com/your_profile"
+    aria-label="Pinterest"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Pinterest
+  </a>
         </div>
       </div>
     </footer>
